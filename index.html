@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Zijun Liu's bilingual academic homepage for neuroscience PhD applications, featuring research interests, projects, education, publications, skills, and CV."
+    />
+    <title>Zijun Liu | Neuroscience PhD Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark" data-content="initials">ZL</span>
+        <span class="brand-text" data-content="name">Your Name</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#research" data-i18n="nav.research">Research</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#cv" data-i18n="nav.cv">CV</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">
+        <span data-i18n="languageToggle">中文</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow" data-content="applicationTrack">Neuroscience PhD Applicant</p>
+          <h1 data-content="heroTitle">Your Name</h1>
+          <p class="hero-summary" data-content="summary">
+            A neuroscience student interested in systems neuroscience, cognition, and computational methods.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects" data-i18n="hero.viewProjects">View Projects</a>
+            <a class="button secondary" href="assets/CV.pdf" data-cv-link data-i18n="hero.downloadCv">Download CV</a>
+          </div>
+        </div>
+
+        <aside class="research-card" aria-label="Research profile snapshot">
+          <div class="signal-visual" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <dl class="profile-facts">
+            <div>
+              <dt data-i18n="hero.focusLabel">Research Focus</dt>
+              <dd data-content="researchFocus">Neural circuits, cognition, and behavior</dd>
+            </div>
+            <div>
+              <dt data-i18n="hero.methodsLabel">Methods</dt>
+              <dd data-content="methodSummary">Behavioral analysis, imaging, modeling</dd>
+            </div>
+            <div>
+              <dt data-i18n="hero.seekingLabel">Seeking</dt>
+              <dd data-content="seeking">PhD positions starting Fall 2027</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section" id="research">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="sections.research.eyebrow">Research Direction</p>
+          <h2 data-i18n="sections.research.title">Questions I hope to pursue</h2>
+        </div>
+        <div class="interest-grid" data-render="researchInterests"></div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="sections.projects.eyebrow">Selected Work</p>
+          <h2 data-i18n="sections.projects.title">Research projects</h2>
+        </div>
+        <div class="project-list" data-render="projects"></div>
+      </section>
+
+      <section class="section split-section" id="cv">
+        <div>
+          <div class="section-heading compact">
+            <p class="eyebrow" data-i18n="sections.cv.eyebrow">Academic Background</p>
+            <h2 data-i18n="sections.cv.title">CV snapshot</h2>
+          </div>
+          <p class="section-intro" data-content="cvIntro">
+            A concise overview of education, research outputs, awards, and technical skills.
+          </p>
+          <a class="button primary" href="assets/CV.pdf" data-cv-link data-i18n="sections.cv.download">
+            Download Full CV
+          </a>
+        </div>
+
+        <div class="timeline-stack">
+          <section class="info-panel">
+            <h3 data-i18n="sections.education.title">Education</h3>
+            <div data-render="education"></div>
+          </section>
+          <section class="info-panel">
+            <h3 data-i18n="sections.publications.title">Publications & Presentations</h3>
+            <div data-render="publications"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section two-column">
+        <section class="info-panel">
+          <h2 data-i18n="sections.skills.title">Methods & Skills</h2>
+          <div class="tag-cloud" data-render="skills"></div>
+        </section>
+        <section class="info-panel">
+          <h2 data-i18n="sections.awards.title">Awards & Service</h2>
+          <div data-render="awards"></div>
+        </section>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="eyebrow" data-i18n="sections.contact.eyebrow">Contact</p>
+          <h2 data-i18n="sections.contact.title">Open to PhD conversations</h2>
+          <p data-content="contactNote">
+            I welcome conversations about neuroscience PhD opportunities, research fit, and collaborative projects.
+          </p>
+        </div>
+        <div class="contact-links" data-render="links"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span data-content="footerName">Your Name</span>
+      <span data-i18n="footer.note">Last updated for PhD applications.</span>
+    </footer>
+
+    <script src="content.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
